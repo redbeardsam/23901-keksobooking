@@ -1,7 +1,7 @@
 # Личный проект «Кексобукинг» [![Build status][travis-image]][travis-url]
 
 * Студент: [Егор Тонконогов](https://up.htmlacademy.ru/javascript/9/user/23901).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Андреев](https://up.htmlacademy.ru/javascript/9/user/373167).
 
 ---
 
