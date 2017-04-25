@@ -27,7 +27,7 @@ similarLodgeElement.appendChild(fragment);
 
 function renderLodgeInfo(info){
   var lodgeInfo = htmlToElement('<div class="dialog__panel"><h3 class="lodge__title"></h3><p class="lodge__address"></p><h3 class="lodge__price"></h3><h4 class="lodge__type"></h4><p class="lodge__rooms-and-guests"></p><p class="lodge__checkin-time"></p><div class="lodge__features"></div><p class="lodge__description"></p><div class="lodge__photos"></div></div>');
-  document.querySelector('.lodge__title').textContent = info.offer.title;
+  lodgeInfo.querySelector('.lodge__title').textContent = info.offer.title;
 
   return lodgeInfo;
 }
@@ -35,4 +35,5 @@ function renderLodgeInfo(info){
 var similarLodgeInfo = document.querySelector('#lodge-template');
 var dialog = similarLodgeInfo.querySelector('.dialog__panel');
 similarLodgeInfo.removeChild(dialog);
+fragment.appendChild(renderLodgeInfo(LODGES[i]));
 similarLodgeInfo.appendChild(fragment);
