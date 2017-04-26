@@ -60,9 +60,9 @@ function shuffle(arr) {
 // переменные смешанных массивов
 var lodgesAvatar = shuffle(LODGES_AVATAR);
 var titleVariation = shuffle(TITLE_VARIATION);
-var features= shuffle(FEATURES);
+var features = shuffle(FEATURES);
 
-//создаем рандомные места
+// создаем рандомные места
 function getRandomLodges() {
   var randomLodges = {
     author: {
@@ -102,7 +102,7 @@ function getTypeVariation(type) {
   var randomTypeVariation = TYPE_VARIATION[getRandomInt(0, 3)];
   if (randomTypeVariation === 'flat') {
     type = 'Квартира.';
-  } else if (randomTypeVariation === 'house'){
+  } else if (randomTypeVariation === 'house') {
     type = 'Дом.';
   } else {
     type = 'Бунгало.';
@@ -112,7 +112,7 @@ function getTypeVariation(type) {
 
 // ништяки жилья
 function getSomeFeatures() {
-  var someFeatures= features.slice(0, getRandomInt(0, FEATURES.length));
+  var someFeatures = features.slice(0, getRandomInt(0, FEATURES.length));
   return someFeatures;
 }
 
